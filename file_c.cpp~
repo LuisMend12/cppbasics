@@ -1,0 +1,25 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+int main() {
+
+    int n, x;
+    std::vector<int> numbers;
+
+    std::cin >> n;
+
+    std::vector<int>::iterator it;
+
+    std::sort(numbers.begin(), numbers.end());
+    
+    std::cout << "Sorted vector: ";
+    for (int it = numbers.begin(); it != numbers.end(); ++it)
+        {
+            std::cout << *it << " ";
+        }
+    
+    return 0;
+}
+
+
