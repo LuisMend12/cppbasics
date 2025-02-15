@@ -1,0 +1,22 @@
+Hash Maps
+
+Direct indexing: every element has a unique key which serves as an index. This
+let us about very efficient searches in an array.
+
+When searching on a Hash table, all possible keys can be store in the future.
+We assume that the keys are integers, hash table. Eventually, keys are going
+to share the same position and that causes a collision. 
+1.Hash functions should be uniform: all hash-values should be (at least
+approximately) eqaully probable.
+
+2.Hash function should not correlate with patterns in data. 
+
+To find the hash key we have to use h(k) = k mod m
+
+Multiplication method:
+
+H(k) = floor(m(ka-floor(ka)))
+
+A is a constant which is the inverse golden ratio, A = (sqrt(5)-1)/ 2, this
+number creates the less number of possible collisions. all keys with the same
+hash value are store in a linked list.

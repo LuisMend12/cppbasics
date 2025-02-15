@@ -1,0 +1,46 @@
+Pointers substraction
+
+Substract one pointer from another: both must have the same type
+Pointers comparisons: P+k is essentially P[k], because p is pointing to zero.
+
+A pointer has 8 bits
+
+Structures:
+
+there are no classes in c. 
+
+
+struct student_grade{
+	char *name;
+	int id;
+	char grade[3];
+}
+
+struct can store any data type.
+
+
+TO define a struct, it looks like this:
+
+ struct Person{
+	char name[32];
+	int age;
+	char gender;
+
+};
+
+int main()
+{	
+	struct p;
+	p.age = 2;
+	p.gender = "male";
+	p.name = "Luis";
+}
+
+To access a struct as a pointer, we have to use arrows, with normal struct variable we have to use a point.
+
+Most of the structures are pointers.
+fi we have a double pointer we have to use the varaiables from the struct as (*si) -> variable from the struct.
+
+The size of an integer is 4, the size of a character is 1 and the size of a double is 8. all of these are bytes.
+
+
