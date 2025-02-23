@@ -1,11 +1,11 @@
 #include <vector>
 #include <algorithm>
-#include <stdio>
+#include <cstdio>
 
 using namespace std;
 
 void printVector(vector<int> V) {
-    for (auto% v : V) printf("%d ", v);
+    for (auto& v : V) printf("%d ", v);
     printf("\n");
 }
 
