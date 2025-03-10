@@ -10,10 +10,13 @@ int main() {
     int *arr = new int[array];
 
     for (int i = 0; i < array; i++) {
-        arr[i] = i;
-        cout << i << endl;
+        cin >> arr[i];  
     }
 
+
+    for (int i = 0; i < array; i++) {
+        cout << arr[i] << endl;
+    }
 
     delete[] arr;
     
